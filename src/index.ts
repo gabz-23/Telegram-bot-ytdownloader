@@ -1,9 +1,9 @@
 import 'dotenv/config';
 
 import { Telegraf, Input } from 'telegraf';
-import { downloadVideo } from './videoDL.ts';
+import { downloadVideo } from './videoDL';
 import { existsSync, statSync } from 'fs';
-import { cleanDownloads } from './helper/cleanDownloads.ts';
+import { cleanDownloads } from './helper/cleanDownloads';
 
 const bot = new Telegraf(process.env.BOT_TOKEN!, {
     handlerTimeout: Infinity,

@@ -1,6 +1,6 @@
 import { YtDlp } from 'ytdlp-nodejs';
 import { join } from 'path';
-import { downloadThumbnail } from './thumbnailDL.ts';
+import { downloadThumbnail } from './thumbnailDL';
 
 const ytdlp = new YtDlp();
 const DOWNLOAD_FOLDER = 'videos';
