@@ -1,0 +1,10 @@
+services:
+    youtubedlbot:
+        build: .
+
+        container_name: youtubedl_bot
+
+        restart: always
+
+        env_file:
+            - .env
