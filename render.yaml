@@ -1,0 +1,13 @@
+services:
+    - type: web
+      name: youtubedlbot
+      env: docker
+      dockerfilePath: ./dockerfile
+      dockerContext: .
+      plan: free # o starter, standard, pro
+      branch: main
+      healthCheckPath: /health # opcional
+
+envVars:
+    - key: BOT_TOKEN
+      value: $BOT_TOKEN
